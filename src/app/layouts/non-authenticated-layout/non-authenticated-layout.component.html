@@ -1,0 +1,41 @@
+<mat-toolbar class="d-none d-lg-flex">
+  <img src="../../../assets/img/information.png" alt="Information icon" routerLink="/">
+  <div class="right-nav">
+    <button mat-flat-button routerLinkActive="active" [routerLink]="['/sectors']">
+      Sectors
+    </button>
+    <button mat-flat-button routerLinkActive="active" [routerLink]="['/about']">
+      About
+    </button>
+    <!--    <button mat-flat-button routerLinkActive="active" [routerLink]="['/contact']">-->
+    <!--      Contact-->
+    <!--    </button>-->
+  </div>
+
+</mat-toolbar>
+
+<mat-toolbar class="d-flex d-lg-none">
+  <img src="../../../assets/img/information.png" alt="Information icon" routerLink="/">
+
+  <div class="right-nav">
+
+    <button mat-icon-button class="nav-button mat-elevation-z0" [matMenuTriggerFor]="userMenu">
+      <mat-icon class="menu-icon dark" fontSet="fas" fontIcon="fa-bars"></mat-icon>
+    </button>
+
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item routerLinkActive="active" [routerLink]="['/sectors']">
+        Sector
+      </button>
+      <button mat-menu-item routerLinkActive="active" [routerLink]="['/about']">
+        About
+      </button>
+      <!--      <button mat-menu-item routerLinkActive="active" [routerLink]="['/contact']">-->
+      <!--        Contact-->
+      <!--      </button>-->
+    </mat-menu>
+
+  </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,43 @@
+mat-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #3CC47C;
+  font-family: 'Mulish', sans-serif;
+
+  &:hover {
+    box-shadow: 0 5px 15px -10px rgba(30, 45, 62, .21), 0 5px 10px -10px rgba(31, 44, 60, .1);
+    transition: box-shadow 0.3s ease-in-out;
+
+    -webkit-filter: brightness(0.95);
+    filter: brightness(0.95);
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Mulish', sans-serif;
+
+    .card-text {
+      padding-left: 20px;
+    }
+
+    mat-card-content {
+      font-size: 16px;
+    }
+  }
+
+  img {
+    width: 7%;
+    height: auto;
+    margin: 10px;
+  }
+}
+
+
+
+
